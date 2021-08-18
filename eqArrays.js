@@ -4,14 +4,18 @@ const assertEqual = function (actual, expected) {
     : `❌Assertion Failed: ${actual} !== ${expected}`;
 };
 
+/**Implement a function eqArrays which takes in two arrays and returns true or false,
+ * based on a perfect match. */
 const eqArrays = function (a, b) {
-  let same = 0;
-  let different = 0;
-
-  for (let i = 0; i < a.length; i++) {
-    a[i] === b[i] ? same++ : different++;
+  if (a.length !== b.length) {
+    return false;
   }
-  return same === a.length;
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] !== b[i]) {
+      return false;
+    }
+  }
+  return true;
 };
 
 console.log(assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true)); // => true
