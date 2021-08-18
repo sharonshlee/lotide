@@ -23,19 +23,19 @@ countOnly will be given an array and an object.
 It will return an object containing counts of everything that the input object listed.
  */
 const countOnly = function (allItems, itemsToCount) {
-  const totalLetters = {};
+  const result = {};
 
   for (const item of allItems) {
     //check itemsToCount truthy keys, return match totalLetters
     if (itemsToCount[item]) {
-      if (!totalLetters[item]) {
-        totalLetters[item] = 1;
+      if (result[item]) {
+        result[item] += 1;
       } else {
-        totalLetters[item] += 1;
+        result[item] = 1;
       }
     }
   }
-  return totalLetters;
+  return result;
 };
 
 const result1 = countOnly(firstNames, {
