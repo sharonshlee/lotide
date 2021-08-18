@@ -25,8 +25,7 @@ It will return an object containing counts of everything that the input object l
 const countOnly = function (allItems, itemsToCount) {
   const totalLetters = {};
 
-  for (let i = 0; i < allItems.length; i++) {
-    const item = allItems[i];
+  for (const item of allItems) {
     //check itemsToCount truthy keys, return match totalLetters
     if (itemsToCount[item]) {
       if (!totalLetters[item]) {
