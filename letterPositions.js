@@ -45,10 +45,12 @@ const results1 = letterPositions("lighthouse in the house");
 console.log(assertArraysEqual(results1["l"], [0]));
 console.log(assertArraysEqual(results1["h"], [0]));
 console.log(assertArraysEqual(results1["e"], [9, 16, 22]));
+console.log(assertArraysEqual(letterPositions("hello").e, [1]));
 
 /*
 Output:
 ✅Assertion Passed: 0 === 0
 ❌Assertion Failed: 3,5,15,18 !== 0
 ✅Assertion Passed: 9,16,22 === 9,16,22
+✅Assertion Passed: 1 === 1
 */
