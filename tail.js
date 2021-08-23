@@ -1,11 +1,3 @@
-const assertEqual = function (actual, expected) {
-  console.log(
-    actual === expected
-      ? `✅Assertion Passed: ${actual} === ${expected}`
-      : `❌Assertion Failed: ${actual} !== ${expected}`
-  );
-};
-
 const tail = function (array) {
   const newArr = [];
 
@@ -15,7 +7,4 @@ const tail = function (array) {
   return newArr;
 };
 
-// Test Case: Check the original array
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-console.log(tail(words));
-assertEqual(words.length, 3);
+module.exports = tail;
