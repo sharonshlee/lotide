@@ -35,3 +35,4 @@ Output:
 ✅Assertion Passed: drama === drama
 ✅Assertion Passed: undefined === undefined
 */
+module.exports = findKeyByValue;

@@ -54,3 +54,4 @@ Output:
 ✅Assertion Passed: 9,16,22 === 9,16,22
 ✅Assertion Passed: 1 === 1
 */
+module.exports = letterPositions;

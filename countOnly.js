@@ -57,3 +57,4 @@ Output:
 ✅Assertion Passed: 2 === 2
 ✅Assertion Passed: undefined === undefined
  */
+module.exports = countOnly;

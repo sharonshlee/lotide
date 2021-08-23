@@ -36,3 +36,5 @@ assertEqual(result["t"], 2); //passed
 ❌Assertion Failed: 4 !== 2
 ✅Assertion Passed: 2 === 2
  */
+
+module.exports = countLetters;

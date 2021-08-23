@@ -63,3 +63,4 @@ Output:
 ✅Assertion Passed: true === true
 ✅Assertion Passed: false === false
 */
+module.exports = eqObjects;

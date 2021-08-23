@@ -41,3 +41,4 @@ console.log(
 Output:
 ❌Assertion Failed: hello,world !== hello,world,lighthouse
 */
+module.exports = without;

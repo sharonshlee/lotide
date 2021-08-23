@@ -39,3 +39,4 @@ Output:
 ✅Assertion Passed: g,c,t,m,t === g,c,t,m,t
 ❌Assertion Failed: g,c,t,m,t !== g,c,t,m
 */
+module.exports = map;

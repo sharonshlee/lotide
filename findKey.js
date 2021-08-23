@@ -42,3 +42,4 @@ Output:
 ❌Assertion Failed: noma !== Sharon
 ❌Assertion Failed: noma !== 1
 */
+module.exports = findKey;
